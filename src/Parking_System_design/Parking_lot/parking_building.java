@@ -20,7 +20,8 @@ public class parking_building {
                Parking_spot spot= level.park(vehicle.getVehicleType());
                if(spot!=null) {
                    Ticket ticket = new Ticket(vehicle, level, spot);
-                   System.out.println("Parking allocated at level " +
+                   System.out.println("Parking allocated to VehicleId " +vehicle.getVehicle_no()
+                           + " at level " +
                            level.getLevelNo() + " at spot " +
                            spot.getSpotId());
 
