@@ -5,12 +5,13 @@ import Parking_System_design.Enums.vehicleType;
 import Parking_System_design.Parking_manager.ParkingSpotManager;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class parking_levels {
     private int levelNo;
-    private HashMap<vehicleType, ParkingSpotManager> managers;
+    private Map<vehicleType, ParkingSpotManager> managers;
 
-    parking_levels(int levelNo, HashMap<vehicleType, ParkingSpotManager> managers) {
+    public parking_levels(int levelNo, Map<vehicleType, ParkingSpotManager> managers) {
         this.levelNo = levelNo;
         this.managers = managers;
     }
